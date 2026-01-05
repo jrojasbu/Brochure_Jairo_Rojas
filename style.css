@@ -147,6 +147,7 @@ ul {
     line-height: 1.1;
     background: linear-gradient(to right, #fff, #aaa);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fadeInUp 1s ease 0.2s backwards;
 }
@@ -415,6 +416,19 @@ ul {
 .timeline-content p {
     color: var(--text-secondary);
     font-size: 0.95rem;
+}
+
+.timeline-img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.timeline-img:hover {
+    transform: scale(1.02);
 }
 
 /* Skills Grid */
