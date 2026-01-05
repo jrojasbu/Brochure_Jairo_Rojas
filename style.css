@@ -1,16 +1,19 @@
 :root {
-    --bg-color: #050505;
-    --bg-secondary: #0a0a0a;
-    --text-primary: #e0e0e0;
-    --text-secondary: #a0a0a0;
-    --accent-color: #d4af37;
-    /* Gold elegante */
-    --accent-hover: #b5952f;
+    --bg-color: #000000;
+    --bg-secondary: #111111;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --accent-color: #ffffff;
+    /* White as primary accent like Squarespace buttons */
+    --accent-hover: #dddddd;
     --card-bg: #111111;
-    --border-color: #222;
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Montserrat', sans-serif;
-    --transition: all 0.3s ease;
+    --border-color: #333333;
+    --font-heading: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    /* Clean geometric sans */
+    --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    --transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    --btn-radius: 0px;
+    /* Sharp corners */
 }
 
 * {
@@ -117,11 +120,13 @@ ul {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 4rem;
+    justify-content: space-between;
+    /* Split layout */
+    gap: 5%;
     position: relative;
     overflow: hidden;
-    padding: 0 5%;
+    padding: 120px 5% 0;
+    /* More top padding for nav */
 }
 
 .hero-content {
@@ -133,23 +138,27 @@ ul {
 
 .greeting {
     display: block;
-    font-size: 1.2rem;
-    color: var(--accent-color);
-    margin-bottom: 10px;
-    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     animation: fadeInDown 1s ease;
 }
 
 .name {
-    font-size: 5rem;
-    margin-bottom: 10px;
+    font-size: 4.5rem;
+    /* Large and bold */
+    font-weight: 700;
+    margin-bottom: 20px;
     line-height: 1.1;
-    background: linear-gradient(to right, #fff, #aaa);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
     animation: fadeInUp 1s ease 0.2s backwards;
+    background: none;
+    -webkit-text-fill-color: initial;
+    background-clip: border-box;
 }
 
 .title {
@@ -179,13 +188,14 @@ ul {
 }
 
 .btn {
-    padding: 12px 30px;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    font-weight: 600;
+    padding: 18px 40px;
+    border-radius: var(--btn-radius);
+    font-size: 0.85rem;
+    font-weight: 700;
     cursor: pointer;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
+    transition: var(--transition);
 }
 
 .btn-primary {
@@ -203,6 +213,7 @@ ul {
     background-color: transparent;
     color: var(--text-primary);
     border: 2px solid var(--text-primary);
+    /* Thin border */
 }
 
 .btn-outline:hover {
@@ -222,18 +233,23 @@ ul {
 }
 
 .hero-img {
-    max-width: 450px;
+    max-width: 100%;
     width: 100%;
-    border-radius: 20px;
-    box-shadow: 20px 20px 0 var(--accent-color);
-    filter: grayscale(20%) contrast(1.1);
+    border-radius: var(--btn-radius);
+    /* Sharp corners */
+    box-shadow: none;
+    /* Cleaner look */
+    filter: none;
+    /* Natural colors */
     transition: var(--transition);
+    object-fit: cover;
+    max-height: 80vh;
 }
 
 .hero-img:hover {
-    filter: grayscale(0%) contrast(1);
-    transform: translateY(-5px);
-    box-shadow: 15px 15px 0 var(--accent-color);
+    transform: scale(1.02);
+    /* Subtle zoom */
+    box-shadow: none;
 }
 
 @keyframes fadeInDown {
@@ -277,12 +293,8 @@ ul {
 }
 
 .section-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: var(--accent-color);
-    margin: 20px auto 0;
+    /* Removed underline for cleaner look */
+    content: none;
 }
 
 /* About */
@@ -367,10 +379,12 @@ ul {
 .timeline-dot {
     position: absolute;
     top: 5px;
-    width: 16px;
-    height: 16px;
-    background-color: var(--accent-color);
-    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: var(--text-primary);
+    /* White dot */
+    border-radius: 0;
+    /* Square dot */
     z-index: 10;
 }
 
@@ -410,8 +424,9 @@ ul {
 .timeline-img {
     width: 100%;
     margin-top: 15px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 0;
+    /* Sharp corners */
+    box-shadow: none;
     border: 1px solid #333;
     transition: transform 0.3s ease;
 }
@@ -428,23 +443,25 @@ ul {
 }
 
 .skill-card {
-    background-color: var(--card-bg);
-    padding: 40px;
+    background-color: transparent;
+    padding: 40px 20px;
     border: 1px solid var(--border-color);
-    border-radius: 5px;
+    border-radius: var(--btn-radius);
     text-align: center;
     transition: var(--transition);
 }
 
 .skill-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    border-color: var(--text-primary);
+    background-color: #1a1a1a;
 }
 
 .skill-card i {
-    font-size: 2.5rem;
-    color: var(--accent-color);
-    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--text-primary);
+    /* White icons */
+    margin-bottom: 25px;
 }
 
 .skill-card h3 {
