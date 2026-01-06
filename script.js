@@ -83,10 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
             slides.forEach((slide, index) => {
                 if (index === currentIndex) {
                     slide.style.opacity = '1';
-                    slide.style.transform = 'scale(1)';
+                    slide.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
                 } else {
-                    slide.style.opacity = '0.5';
-                    slide.style.transform = 'scale(0.95)';
+                    slide.style.opacity = '1';
+                    slide.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
                 }
             });
         }
