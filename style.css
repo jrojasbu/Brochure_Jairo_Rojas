@@ -115,6 +115,26 @@ ul {
     color: var(--text-secondary);
 }
 
+/* Navbar Button */
+.btn-lang {
+    background: transparent;
+    border: 1px solid var(--text-secondary);
+    color: var(--text-secondary);
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 4px;
+    font-family: var(--font-body);
+}
+
+.btn-lang:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.05);
+}
+
 .nav-links a:hover {
     color: var(--accent-color);
 }
