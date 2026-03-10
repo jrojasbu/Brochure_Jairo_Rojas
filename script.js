@@ -200,6 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_about: "Sobre Mí",
             nav_exp: "Experiencia",
             nav_skills: "Habilidades",
+            nav_projects: "Proyectos",
             nav_contact: "Contacto",
             hero_greeting: "Hola, soy",
             hero_title: "Analista de Datos | Data Analytics & Reporting | People Analytics",
@@ -257,6 +258,8 @@ document.addEventListener('DOMContentLoaded', () => {
             skill_ds_desc: "Ética y Manejo de Datos en IA · Prompt Engineering con ChatGPT · Carrera en Data Science e Inteligencia Artificial",
             skill_bus_title: "Negocios y Finanzas",
             skill_bus_desc: "Análisis de Negocios · Retención para Startups · Inversión en Bolsa · Trading",
+            projects_title: "Proyectos Personales",
+            projects_desc: "He desarrollado aplicaciones enfocadas en automatización y análisis de datos. Entre ellas, un sistema de gestión para peluquería construido con HTML, Python (Flask) y SQLite, que integra un módulo de análisis de datos y predicción para apoyar la toma de decisiones. También desarrollé una aplicación en la nube que realiza web scraping de resultados históricos de Baloto y Miloto, ejecuta análisis estadístico de tendencias y genera posibles combinaciones basadas en patrones históricos.",
             contact_title: "Contacto",
             footer_rights: "&copy; 2026 Jairo Rojas. Todos los derechos reservados."
         },
@@ -322,6 +325,9 @@ document.addEventListener('DOMContentLoaded', () => {
             skill_ds_desc: "Ethics and Data Handling in AI · Prompt Engineering with ChatGPT · Career in Data Science and Artificial Intelligence",
             skill_bus_title: "Business & Finance",
             skill_bus_desc: "Business Analysis · Retention for Startups · Stock Market Investment · Trading",
+            nav_projects: "Projects",
+            projects_title: "Personal Projects",
+            projects_desc: "I have developed applications focused on automation and data analysis. These include a management system for a hair salon built with HTML, Python (Flask), and SQLite, which integrates a data analysis and prediction module to support decision-making. I also developed a cloud application that performs web scraping of historical Baloto and Miloto results, executes statistical analysis of trends, and generates possible combinations based on historical patterns.",
             contact_title: "Contact",
             footer_rights: "&copy; 2026 Jairo Rojas. All rights reserved."
         }

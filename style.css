@@ -1025,6 +1025,56 @@ footer {
     }
 }
 
+/* Proyectos Personales Section */
+#proyectos {
+    background-color: var(--bg-secondary);
+}
+
+.projects-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.project-content {
+    max-width: 800px;
+    padding: 40px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    transition: var(--transition);
+}
+
+.project-content:hover {
+    border-color: var(--text-primary);
+    background-color: #1a1a1a;
+    transform: translateY(-5px);
+}
+
+.project-content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.project-link span {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.project-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
 /* Custom Cursor Styles */
 .cursor {
     width: 8px;
